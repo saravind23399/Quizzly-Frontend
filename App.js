@@ -69,6 +69,6 @@ const AppNavigator = createStackNavigator({
   }
 },
   {
-    initialRouteName: 'AdminHome'
+    initialRouteName: 'Login'
   });
 export default createAppContainer(AppNavigator);
