@@ -96,7 +96,7 @@ export class UserHome extends Component<Props> {
                         questions: response.message.questions
                     }, () => {
                         this.setState({
-                            loadQuiz: false
+                            loadingQuiz: false
                         })
                     })
                 } else {
