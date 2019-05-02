@@ -111,11 +111,11 @@ android {
 
     signingConfigs {
         release {
-            if (project.hasProperty('MYAPP_RELEASE_STORE_FILE')) {
-                storeFile file(MYAPP_RELEASE_STORE_FILE)
-                storePassword MYAPP_RELEASE_STORE_PASSWORD
-                keyAlias MYAPP_RELEASE_KEY_ALIAS
-                keyPassword MYAPP_RELEASE_KEY_PASSWORD
+            if (project.hasProperty('APPCENTER_KEY_STORE_FILE')) {
+                storeFile file(APPCENTER_KEY_STORE_FILE)
+                storePassword APPCENTER_KEYSTORE_PASSWORD
+                keyAlias APPCENTER_KEY_ALIAS
+                keyPassword APPCENTER_KEY_PASSWORD
             }
         }
     }
