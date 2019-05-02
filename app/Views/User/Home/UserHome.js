@@ -100,7 +100,11 @@ export class UserHome extends Component<Props> {
                         })
                     })
                 } else {
-                    QuizzlyAlert.errorAlert('Oopsie!', response.message)
+                    this.setState({
+                        loadingQuiz: false
+                    },()=>{
+                        QuizzlyAlert.errorAlert('Oopsie!', response.message)
+                    })
                 }
             })
         })
@@ -164,7 +168,7 @@ export class UserHome extends Component<Props> {
                 questions: questions,
                 currentQuestion: currentQuestion
             }, () => {
-            })
+            })  
         }
     }
 
